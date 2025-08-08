@@ -17,6 +17,17 @@ jobs:
         
             - name: "Node version"
               run: node --version
+
+            - name: "Clone repository"
+              uses: actions/checkout@v2
+
+            - name: "Install dependencies"
+              run: npm run install
+
+            - name: "List directories of project"
+              run: ls -l
+              
+
               
 
 
