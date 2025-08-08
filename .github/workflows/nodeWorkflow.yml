@@ -22,11 +22,11 @@ jobs:
               uses: actions/checkout@v2
 
             - name: "Install dependencies"
-              run: npm run install
+              run: npm install
 
             - name: "List directories of project"
               run: ls -l
-              
+
 
               
 
