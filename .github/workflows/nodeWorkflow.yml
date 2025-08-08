@@ -1,0 +1,22 @@
+name: "React CI Workflow"
+
+on:
+    push:
+        branches:
+            - main
+            - master
+
+jobs:
+    node-setup:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Installing node"
+              uses: actions/setup-node@v4
+              with:
+                node-version: '24'
+        
+            - name: "Node version"
+              run: node --version
+              
+
+
