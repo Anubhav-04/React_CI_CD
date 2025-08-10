@@ -27,6 +27,13 @@ jobs:
             - name: "List directories of project"
               run: ls -l
 
+            - name: "Upload artifact"
+              uses: actions/upload-artifact@v4
+              with:
+                  name: build
+                  path: dist
+
+
 
               
 
